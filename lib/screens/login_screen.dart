@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:social_media_app/widgets/curve_clipper.dart';
 
+import 'home_screen.dart';
+
 class LoginScreen extends StatefulWidget {
   LoginScreen({Key key}) : super(key: key);
 
@@ -33,7 +35,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 style: TextStyle(
                     fontSize: 34,
                     color: Theme.of(context).primaryColor,
-                    letterSpacing: 1,
+                    letterSpacing: 10,
                     fontWeight: FontWeight.bold),
               ),
               SizedBox(
@@ -88,7 +90,8 @@ class _LoginScreenState extends State<LoginScreen> {
                     horizontal: 60,
                     vertical: 10,
                   ),
-                  onPressed: () {},
+                  onPressed: () => Navigator.pushReplacement(
+                      context, MaterialPageRoute(builder: (_) => HomeScreen())),
                   child: Text(
                     'Login',
                     style: TextStyle(
