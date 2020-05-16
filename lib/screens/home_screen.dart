@@ -40,6 +40,7 @@ class _HomeScreenState extends State<HomeScreen>
         ),
         bottom: TabBar(
           controller: _tabController,
+          labelPadding: EdgeInsets.only(bottom: 10),
           labelColor: Theme.of(context).primaryColor,
           labelStyle: TextStyle(
             fontSize: 18,
@@ -47,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen>
           ),
           tabs: [
             Text('Trending'),
-            Text('Trending'),
+            Text('Latest'),
           ],
         ),
       ),
